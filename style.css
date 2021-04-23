@@ -108,7 +108,7 @@ a {
 
 .dropmenu{
     position: absolute;
-    z-index: 1;
+    z-index: 99;
     background-color: rgb(48, 88, 199);
     min-width: 25vw;
     overflow-x: hidden;
@@ -139,16 +139,29 @@ a {
     .info-container{
         font-size: 1em;
     }
-    
+    .flex-container{
+        padding: 5% 0%;
+    }
+    .flex-container > div{
+        width: 60%;
+        padding: 2.5% 5%;
+    }
+    table{
+        font-size: 1.5vw;
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 991px) {
-    .swap{
-        order: 0;
-    }
     .flex-container > div{
         font-size: 1em;
     }
     .info-container{
         font-size: 1em;
+    }
+    .profile{
+        padding: 5% 0%;
+    }
+    .profile > div{
+        width: 60%;
+        padding: 2.5% 5%;
     }
 }

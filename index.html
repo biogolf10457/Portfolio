@@ -8,11 +8,21 @@
     <title>Home</title>
 </head>
 <body>
-    <nav id="myNavbar">
-        <div class="nav-item">Home</div>
-        <div class="nav-item">Profile</div>
-        <div class="nav-item">Works</div>
-    </nav>
+  <nav id="myNavbar">
+    <div class="burger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <a href="index.html"><div class="nav-item">Home</div></a>
+    <a href="profile.html"><div class="nav-item">Profile</div></a>
+    <a href="works.html"><div class="nav-item">Works</div></a>
+  </nav>
+  <div class="dropmenu">
+      <a href="index.html"><div class="nav-item-drop">Home</div></a>
+      <a href="profile.html"><div class="nav-item-drop">Profile</div></a>
+      <a href="works.html"><div class="nav-item-drop">Works</div></a>
+  </div>
     <!-- Carousel -->
   <div id="carousel-IT" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
@@ -69,4 +79,5 @@
   </div>
 </body>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 </html>
