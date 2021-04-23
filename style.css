@@ -9,6 +9,7 @@ body{
     font-family: 'Athiti';
     background-color: rgb(26, 26, 82);
     color: rgb(250, 248, 242);
+    transition: .5s;
 }
 .burger{
     margin: 6px;
@@ -91,11 +92,11 @@ td{
     order: 99;
 }
 
-.flex-container:nth-child(odd){
+.flex-container:nth-child(even){
     background-color: rgb(30, 73, 138);
     color: white;
 }
-.flex-container:nth-child(even){
+.flex-container:nth-child(odd){
     background-color: rgb(101, 194, 223);
     color: black;
 }
@@ -104,6 +105,23 @@ a {
     color: inherit; 
     text-decoration: none;
 } 
+
+.dropmenu{
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(48, 88, 199);
+    min-width: 25vw;
+    overflow-x: hidden;
+    border-right: 2px solid rgb(250, 248, 242);
+    display: none;
+}
+.nav-item-drop{
+    display: block;
+    padding: 10px 15px;
+    font-size: 1.15em;
+    width: 100%;
+    border-bottom: 2px solid rgb(250, 248, 242);
+}
 
 @media only screen and (max-width: 576px) {
     .burger{
