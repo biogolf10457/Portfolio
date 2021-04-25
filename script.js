@@ -21,7 +21,7 @@ function showByClass(eclass) {
     if (elms[0].getBoundingClientRect().top > (3 * h) / 4) {
       for (let i = 0; i < elms.length; i++) {
         elms[i].style.opacity = "0%";
-        elms[i].style.transform = "translate(0,5%)";
+        elms[i].style.transform = "translate(0,15%)";
       }
     }
   }
