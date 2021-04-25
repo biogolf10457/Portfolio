@@ -28,6 +28,25 @@ function showByClass(eclass) {
 
 window.addEventListener("scroll", (event) => {
     showByClass('scroll')
+    addAnim()
 });
 
+function addAnim() {
+    var elms = document.getElementsByClassName('slide-hit-anim');
+    var h = window.innerHeight;
+    for (let i = 0; i < elms.length; i++) {
+      if (
+        elms[i].getBoundingClientRect().top < (3 * h) / 4
+      ) {
+        elms[i].style.animationName = 'slide-hit-anim'
+        elms[i].style.transform = "translateX(0%)";
+      }
+      else{
+        elms[i].style.transform = "translateX(300%)";
+        elms[i].style.animationName = ''
+      }
+    }
+}
+
 showByClass('scroll')
+addAnim()
