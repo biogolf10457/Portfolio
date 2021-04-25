@@ -57,11 +57,21 @@ body{
     margin: 0;
     padding: 0;
     height: 32vw;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15vw;
+    position: relative;
+    overflow: hidden;
+}
+.headTitle > img{
+    position: absolute;
+    opacity: .85;
+}
+.headTitle > div{
+    z-index: 1;
+    text-shadow: 10px 10px 20px rgb(33, 33, 126);
 }
 
 .flex-container{
@@ -82,6 +92,7 @@ body{
 td{
     vertical-align: top;
     height: 3em;
+    font-size: 1.15em;
 }
 
 .imgStyle{
@@ -121,6 +132,24 @@ a {
     font-size: 1.15em;
     width: 100%;
     border-bottom: 2px solid rgb(250, 248, 242);
+}
+
+.button{
+    padding: 2% 4%;
+    background-color: rgb(236, 141, 17);
+    color: black;
+    width: fit-content;
+    border-radius: 20px;
+    transition: .25s;
+}
+.button:hover{
+    background-color: rgb(236, 68, 17);
+    color: white;
+}
+
+.scroll{
+    transition: .5s;
+    opacity: 0;
 }
 
 @media only screen and (max-width: 576px) {
