@@ -12,7 +12,6 @@ function showByClass(eclass) {
     var h = window.innerHeight;
     for (let i = 0; i < elms.length; i++) {
       if (
-        elms[i].getBoundingClientRect().top > 0 &&
         elms[i].getBoundingClientRect().top < (3 * h) / 4
       ) {
         elms[i].style.opacity = "100%";
