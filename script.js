@@ -30,6 +30,10 @@ window.addEventListener("scroll", (event) => {
     showByClass('scroll')
     addAnim()
 });
+window.addEventListener('resize', (eventResize) => {
+  setIframeHeight()
+});
+
 
 function addAnim() {
     var elms = document.getElementsByClassName('slide-hit-anim');
@@ -52,5 +56,16 @@ function goToWork(work) {
   window.location.href = "works.html#"+work
 }
 
-showByClass('scroll')
-addAnim()
+function setIframeHeight() {
+  let iframe = document.getElementsByTagName('iframe')
+  for (let i = 0; i < iframe.length; i++) {
+    iframe[i].height = iframe[i].clientWidth * 0.56428571428
+  }
+}
+
+function initialize() {
+  showByClass('scroll')
+  addAnim()
+  setIframeHeight()
+}
+initialize()
