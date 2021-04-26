@@ -48,5 +48,9 @@ function addAnim() {
     }
 }
 
+function goToWork(work) {
+  window.location.href = "works.html#"+work
+}
+
 showByClass('scroll')
 addAnim()
