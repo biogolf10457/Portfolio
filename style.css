@@ -12,6 +12,21 @@ body{
     transition: .5s;
     overflow-x: hidden;
 }
+
+#myNavbar{
+    position: relative;
+    text-align: right;
+}
+#navTitle{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: rgb(18, 222, 236);
+    font-style: italic;
+}
+
 .burger{
     margin: 6px;
     padding: 6px;
@@ -39,7 +54,7 @@ body{
 
 .nav-item{
     display: inline-block;
-    padding: 1.5%;
+    padding: 20px 4%;
 }
 
 .info-container{
@@ -120,11 +135,12 @@ a {
 
 .dropmenu{
     position: absolute;
+    right: 0;
     z-index: 99;
     background-color: rgb(48, 88, 199);
     min-width: 25vw;
     overflow-x: hidden;
-    border-right: 2px solid rgb(250, 248, 242);
+    border-left: 2px solid rgb(250, 248, 242);
     display: none;
 }
 .nav-item-drop{
@@ -133,6 +149,7 @@ a {
     font-size: 1.15em;
     width: 100%;
     border-bottom: 2px solid rgb(250, 248, 242);
+    text-align: right;
 }
 
 .button{
